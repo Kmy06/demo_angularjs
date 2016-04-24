@@ -1,0 +1,9 @@
+.container{margin-top: 20px;}
+#title{
+	font-size: 2em;
+	font-weight: bold;
+}
+#memo{font-size: 0.8em}
+button{width: 60px;}
+#resultat{width: 240px;}
+.well{width: 280px;}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>Webmail</title>
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl">
+    <div class="container">
+       <div class="well">
+       <p id="title">スーパー電卓</p>
+       <p id="memo">>>{{chiffre1}}{{operation}}</p>
+        <h1><input type="text" value="{{chiffre_temp}}" id="resultat"></h1>
+          <table>
+          <tr>2000 brut + 100
+              <td><button class="btn btn-lg btn-info" ng-click="effacer()"> CE </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="effacer_tout()"> C </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="retour()"> < </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="division()"> / </button></td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-lg btn-info" ng-click="sept()"> 7 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="huit()"> 8 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="neuf()"> 9 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="multiplication()"> * </button></td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-lg btn-info" ng-click="quatre()"> 4 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="cinq()"> 5 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="six()"> 6 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="soustraction()"> - </button></td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-lg btn-info" ng-click="un()"> 1 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="deux()"> 2 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="trois()"> 3 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="addition()"> + </button></td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-lg btn-info" ng-click="moins()"> - </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="zero()"> 0 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="virgule()"> , </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="egale()"> = </button></td>
+            </tr>
+          </table>
+       </div> 
+    </div>    
+  </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</html>

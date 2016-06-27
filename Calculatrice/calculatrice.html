@@ -1,0 +1,40 @@
+<div class="container">
+       <div class="well">
+       <p id="title">スーパー電卓</p>
+       <p id="memo">>>{{$ctrl.chiffre1}}{{$ctrl.operation}}</p>
+        <h1><input type="text" value="{{$ctrl.chiffre_temp}}" id="resultat"></h1>
+        
+          <table>
+          <tr>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.effacer()"> CE </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.effacer_tout()"> C </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.retour()"> < </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.division()"> / </button></td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.sept()"> 7 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.huit()"> 8 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.neuf()"> 9 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.multiplication()"> * </button></td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.quatre()"> 4 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.cinq()"> 5 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.six()"> 6 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.soustraction()"> - </button></td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.un()"> 1 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.deux()"> 2 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.trois()"> 3 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.addition()"> + </button></td>
+            </tr>
+            <tr>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.moins()"> - </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.zero()"> 0 </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.virgule()"> , </button></td>
+              <td><button class="btn btn-lg btn-info" ng-click="$ctrl.egale()"> = </button></td>
+            </tr>
+          </table>
+       </div> 
+    </div>

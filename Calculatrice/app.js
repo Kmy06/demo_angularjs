@@ -1,5 +1,5 @@
 var app = angular.module('myApp', []);
-app.controller('ButtonCtrl', function(){
+function calculatriceController(){
 	this.chiffre_temp = " ";
 	this.chiffre1 = "";
 	this.chiffre2 = "";
@@ -43,4 +43,14 @@ app.controller('ButtonCtrl', function(){
 		this.chiffre1 = "";this.operation = "";
 
 	}
-});
+};
+
+
+
+app.component('calculatrice', {
+	  templateUrl: 'calculatrice.html',
+	  controller: calculatriceController,
+	  bindings: {
+	    
+	  }
+	});
